@@ -10,7 +10,7 @@ void loop() {
   if (RC.available() > 0) {
     RCD = RC.read();//recieve value from serial
     RC.println((byte)RCD);
-    if (RCD < 26) {
+    if (RCD <= 27) {
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press(RCD+96);
       Keyboard.releaseAll();
