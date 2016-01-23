@@ -11,7 +11,7 @@
 // https://www.arduino.cc/en/Reference/KeyboardModifiers
 
 #include<SoftwareSerial.h>
-SoftwareSerial RC(9, 8);// serial TX,RX on PB5, PB4
+SoftwareSerial RC(9, 8);// on black CP2102 board,  RX=PB5  TX=PB4
 char RCD;
 void setup() {
   RC.begin(9600);
